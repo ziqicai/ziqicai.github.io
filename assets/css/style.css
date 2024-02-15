@@ -1,0 +1,379 @@
+/*
+Full CSS Reset
+
+http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
+  License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/*
+  ========================================
+  Box model reset
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+
+/*
+  ========================================
+  General
+  ========================================
+*/
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    padding: 0 20px;
+}
+
+.text {
+    line-height: 1.5em;
+    font-size: 0.7em;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+.linebreak {
+    padding-top: 30px;
+}
+
+ul {
+    list-style-type:disc;
+    list-style-position: inside;
+}
+
+
+/*
+  ========================================
+  Navigation Bar
+  ========================================
+*/
+
+#navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 20px 5px;
+    transition: 0.8s;
+    z-index: 1;
+}
+
+.name {
+    float: left;
+    font-weight: 700;
+    font-size: 1em;
+}
+
+.tab {
+    padding: 2.4px 0 2.4px 40px;
+    font-size: 0.8em;
+}
+
+.nav-right {
+    float: right;
+    padding-right: 40px;
+}
+    
+
+/*
+  ========================================
+  Introduction
+  ========================================
+*/
+
+.intro {
+    padding: 120px 5px 0 5px;
+    width: 75%;
+    font-size: 0.8em;
+}
+
+
+/*
+  ========================================
+  Gallery
+  ========================================
+*/
+
+#work {
+    padding-top: 64px;
+}
+
+.column_1 {
+    padding: 5px;
+}
+
+.column_2 {
+    float: left;
+    width: 50%;
+    padding: 5px;
+}
+
+.column_3 {
+    float: left;
+    width: 33.333%;
+    padding: 5px;
+}
+
+.column_4 {
+    float: left;
+    width: 25%;
+    padding: 5px;
+}
+
+.column_5 {
+    float: left;
+    width: 20%;
+    padding: 5px;
+}
+
+.column_6 {
+    float: left;
+    width: 16.666%;
+    padding: 5px;
+}
+
+.column img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+.column video {
+    border-radius: 20px;
+}
+
+.row::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+h1 {
+    padding: 10px 0 5px 0;
+    font-size: 0.8em;
+}
+
+h5 {
+    font-size: 0.7em;
+    color: gray;
+    padding-bottom: 10px;
+}
+
+
+/*
+  ========================================
+  Detail Page
+  ========================================
+*/
+
+.cover {
+    padding: 100px 0 0 0;
+}
+
+.text_box {
+    padding: 10px 5px 50px 5px;
+}
+
+.text_1st {
+    padding: 5px 5px 10px 5px;
+    width: 50%;
+}
+
+.text_2 {
+    padding: 30px 5px 10px 5px;
+    width: 50%;
+}
+
+.text_l {
+    float: left;
+    width: 30%;
+}
+
+.text_r {
+    float: right;
+    width: 66.667%;
+}
+
+.video {
+    width: 100%;
+}
+
+h2 {
+    font-size: 1.2em;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 0.7em;
+    text-align: center;
+    color: gray;
+    padding: 5px 0 10px 0;
+}
+
+
+/*
+  ========================================
+  Detail Page
+  ========================================
+*/
+
+.about_l {
+    float: left;
+    width: 66.667%;
+    padding: 5px;
+}
+
+.about_r {
+    float: right;
+    width: 30%;
+    padding: 5px;
+}
+
+
+/*
+  ========================================
+  Bottom
+  ========================================
+*/
+
+.content {
+    min-height: calc(100vh - 146px)
+}
+
+.bottom {
+    padding: 100px 5px 20px 5px;
+}
+
+
+/*
+  ========================================
+  Media Queries
+  ========================================
+*/
+
+@media all and (max-width: 750px) {
+
+/*body*/
+    body {
+        padding: 0 10px;
+    }
+    
+    
+/*Text*/ 
+    .intro {
+        padding: 100px 5px 0 5px;
+        width: 100%;
+    }
+    
+    .cover {
+        padding: 80px 0 0 0;
+    }
+
+    .text_box {
+        padding: 10px 5px 30px 5px;
+    }
+    
+    .text_1st {
+        width: 100%;
+    }
+
+    .text_2 {
+        padding: 20px 5px 10px 5px;
+        width: 100%;
+    }
+    
+    .text_l {
+        width: 100%;
+    }
+    
+    .text_r {
+        width: 100%;
+    }
+    
+    .about_l {
+        width: 100%;
+    }
+    
+    .about_r {
+        width: 100%;
+        padding-top: 30px;
+    }
+    
+    .annotation {
+        width: 100%;
+    }
+    
+    .bottom {
+        padding: 80px 5px 20px 5px;
+    }
+    
+    
+/*Navigation Bar*/ 
+    .nav-right {
+        padding-right: 20px;
+    }
+    
+    .tab {
+        padding-left: 20px;
+    }
+    
+    
+/*Gallery*/
+    .column {
+        width: 100%;
+    }
+	
